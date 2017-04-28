@@ -6,6 +6,7 @@ import IdeasListContainer from './containers/ideas-list-container'
 import AddIdeaForm from './containers/add-idea-form'
 import IdeaViewContainer from './containers/idea-view-container'
 import EditIdeaForm from './containers/edit-idea-form'
+import TestAPI from './components/test-api';
 
 export default ()=>{
 	return <div className="app-container">
@@ -15,6 +16,7 @@ export default ()=>{
 				<Route exact path={config.routes.addNewIdea} component={AddIdeaForm} />
 				<Route exact path={config.routes.viewIdea()} component={IdeaViewContainer} />
 				<Route exact path={config.routes.editIdea()} component={EditIdeaForm} />
+				<Route exact path={config.routes.testApi} component={TestAPI} />
 			</Switch>
 		</div>
 }

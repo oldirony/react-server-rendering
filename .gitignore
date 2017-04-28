@@ -2,3 +2,4 @@
 node_modules/
 public/dist
 server.bundle.js
+secret.json

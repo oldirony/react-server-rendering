@@ -3,11 +3,11 @@ import compression from 'compression';
 import React from 'react';
 import reactDOMServer from 'react-dom/server';
 import path from 'path';
-
+import bodyParser from 'body-parser';
 const server = express();
 
 
-
+import config from './src/config';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk'
@@ -18,9 +18,16 @@ import reducer from './src/reducers';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
-server.use(compression());
-server.use('/dist', express.static(path.join(__dirname, 'public/dist')));
+import newIdea from './server/api/new-idea';
+import getIdeas from './server/api/list-ideas';
 
+
+server.use(compression());
+server.use(bodyParser.json());
+
+server.use('/dist', express.static(path.join(__dirname, 'public/dist')));
+server.post(config.routes.newIdeaApi, newIdea);
+server.get(config.routes.getIdeasApi, getIdeas);
 server.get('*', function(req, res){
 	const context = {};
 	const markup = reactDOMServer.renderToString(
