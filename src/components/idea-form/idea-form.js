@@ -24,7 +24,6 @@ class IdeaForm extends Component {
 			formSubmitted: false
 		};
 
-		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	render(){
@@ -37,7 +36,7 @@ class IdeaForm extends Component {
 		const {formTitle} = this.props;
 
 		return (
-			<form onSubmit={this.props.handleSubmit(this.handleSubmit)}>
+			<form onSubmit={this.props.handleSubmit(this.handleSubmit.bind(this))}>
 				<h4 className={field.title}>{formTitle}</h4>
 				<div
 					className={field.row}>

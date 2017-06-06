@@ -7,8 +7,8 @@ import config from '../../src/config';
 
 
 test('Base rendering', ()=>{
-	const header = shallow(wrapper(<Header authed={true}/>));
-	expect(header).toBeTruthy();
+	const header = shallow(<Header authed={true}/>);
+	expect(header).toMatchSnapshot();
 });
 
 describe('Auth states', ()=>{

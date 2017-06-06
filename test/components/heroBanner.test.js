@@ -4,5 +4,5 @@ import {shallow} from 'enzyme';
 
 test('Base rendering', ()=>{
 	const hero = shallow(<HeroBanner />);
-	expect(hero).toBeTruthy();
+	expect(hero).toMatchSnapshot();
 });

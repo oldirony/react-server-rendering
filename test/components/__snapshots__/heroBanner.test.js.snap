@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base rendering 1`] = `
+<div
+  className="banner"
+>
+  <h1
+    className="title"
+  >
+    Ideas!
+  </h1>
+</div>
+`;

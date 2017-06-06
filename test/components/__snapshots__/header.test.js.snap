@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base rendering 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="nav"
+  >
+    <Link
+      className="button buttonPrimary withIcon"
+      replace={false}
+      to="/ideas/new"
+    >
+      <svg
+        className="icon"
+      >
+        <use
+          xlinkHref="#plus"
+        />
+      </svg>
+      <span>
+        Create new
+      </span>
+    </Link>
+  </nav>
+  <Link
+    className="title"
+    replace={false}
+    to="/"
+  >
+    Ideas
+  </Link>
+  <nav
+    className="nav navRight"
+  >
+    <button
+      className="button withIcon"
+    >
+      <svg
+        className="icon"
+      >
+        <use
+          xlinkHref="#toggle-off"
+        />
+      </svg>
+      Hide completed
+    </button>
+    <button
+      className="button withIcon"
+    >
+      <svg
+        className="icon"
+      >
+        <use
+          xlinkHref="#exit"
+        />
+      </svg>
+      Logout
+    </button>
+  </nav>
+</header>
+`;

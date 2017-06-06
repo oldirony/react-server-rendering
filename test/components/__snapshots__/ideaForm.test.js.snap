@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base rendering 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h4
+    className="title"
+  >
+    My title
+  </h4>
+  <div
+    className="row"
+  >
+    <Field
+      className="input inputTitle"
+      component={[Function]}
+      name="title"
+      placeholder="Title here"
+      type="text"
+      validate={
+        Array [
+          [Function],
+        ]
+      }
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <Field
+      className="textarea mainTextarea"
+      component="textarea"
+      name="content"
+      placeholder="Content here"
+    />
+  </div>
+  <div
+    className="section"
+  >
+    <h5
+      className="subtitle"
+    >
+      Sections
+    </h5>
+    <FieldArray
+      className="row"
+      component={[Function]}
+      name="sections"
+    />
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="button"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+`;
