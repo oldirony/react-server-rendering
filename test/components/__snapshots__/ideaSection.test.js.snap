@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base rendering 1`] = `
+<li
+  className="section"
+>
+  <h4
+    className="title"
+  >
+    Section title
+  </h4>
+  <p />
+  <button
+    className="vanilla withIcon button"
+    onClick={[Function]}
+  >
+    <svg
+      className="icon"
+    >
+      <use
+        xlinkHref="#checkbox-unchecked"
+      />
+    </svg>
+    Completed
+  </button>
+</li>
+`;
+
+exports[`Base rendering 2`] = `
+<li
+  className="section isCompleted"
+>
+  <h4
+    className="title"
+  >
+    Section title
+  </h4>
+  <p />
+  <button
+    className="vanilla withIcon button"
+    onClick={[Function]}
+  >
+    <svg
+      className="icon"
+    >
+      <use
+        xlinkHref="#checkbox-checked"
+      />
+    </svg>
+    Completed
+  </button>
+</li>
+`;
