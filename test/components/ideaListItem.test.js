@@ -22,13 +22,11 @@ test('It renders correctly', ()=>{
 	expect(ideaListItem).toMatchSnapshot();
 });
 
-describe('Behaviour', ()=>{
-	const renderItem = (customProps={})=>mount(wrapper(<IdeaListItem {...props} {...customProps}/>));
 
-
+describe('Structure', ()=>{
 	test('Get completed class', ()=>{
-		const ideaListItem = renderItem({isCompleted:true});
-		expect(ideaListItem.find(`.${classes.item}`).hasClass(classes.isCompleted)).toBeTruthy();
+		const ideaListItem = shallow(<IdeaListItem {...props} isCompleted={true}/>);
+		expect(ideaListItem).toMatchSnapshot();
 	});
 
 	test('Renders section number', ()=>{
@@ -37,18 +35,18 @@ describe('Behaviour', ()=>{
 			content: 'My content here',
 			isCompleted: false
 		}
-		let ideaListItem = renderItem({sections:[section, section]});
-		expect(ideaListItem.find(`.${classes.completedSections}`).text()).toEqual('0 / 2');
+		let ideaListItem = shallow(<IdeaListItem {...props} sections={[section, section]}/>);
 
-		ideaListItem = renderItem({sections:[section, {...section, isCompleted:true}]});
-		expect(ideaListItem.find(`.${classes.completedSections}`).text()).toEqual('1 / 2');
+		expect(ideaListItem).toMatchSnapshot();
 
+		ideaListItem = shallow(<IdeaListItem {...props} sections={[section, {...section, isCompleted:true}]}/>);
+
+		expect(ideaListItem).toMatchSnapshot();
 	});
+})
 
-	test('Has Link for view', ()=>{
-		const ideaListItem = renderItem({isCompleted:true});
-		expect(ideaListItem.find(`a`).node.href).toEqual(config.routes.viewIdea());
-	});
+describe('Behaviour', ()=>{
+	const renderItem = (customProps={})=>mount(wrapper(<IdeaListItem {...props} {...customProps}/>));
 
 	test('Test update button', ()=>{
 		const handleUpdateClick = jest.fn();
