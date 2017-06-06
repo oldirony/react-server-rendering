@@ -1,5 +1,5 @@
 import React from 'react';
-import IdeaForm from '../../src/components/idea-form/idea-form';
+import IdeaForm, {SubFieldsHolder} from '../../src/components/idea-form/idea-form';
 import {shallow} from 'enzyme';
 
 const ideaFormProps = {
@@ -13,4 +13,18 @@ const ideaFormProps = {
 test('Base rendering', ()=>{
 	const ideaForm = shallow(<IdeaForm {...ideaFormProps}/>);
 	expect(ideaForm).toMatchSnapshot();
+});
+
+test('Subfield rendering', ()=>
+{
+	const fields = [{}];
+	fields.push = jest.fn()
+	let subfieldholder = shallow(<SubFieldsHolder fields={[]}/>);
+	expect(subfieldholder).toMatchSnapshot();
+
+	subfieldholder = shallow(<SubFieldsHolder fields={fields}/>);
+	expect(subfieldholder).toMatchSnapshot();
+
+	subfieldholder.find('.newSectionButton').simulate('click');
+	expect(fields.push).toBeCalled();
 });

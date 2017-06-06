@@ -61,3 +61,73 @@ exports[`Base rendering 1`] = `
   </div>
 </form>
 `;
+
+exports[`Subfield rendering 1`] = `
+<div
+  className="subFields"
+>
+  <button
+    className="vanilla newSectionButton"
+    onClick={[Function]}
+    type="button"
+  >
+    + Add new section
+  </button>
+</div>
+`;
+
+exports[`Subfield rendering 2`] = `
+<div
+  className="subFields"
+>
+  <div
+    className="section"
+  >
+    <div
+      className="row"
+    >
+      <Field
+        className="input inputSubtitle"
+        component={[Function]}
+        name="[object Object].title"
+        placeholder="Section title here"
+        type="text"
+        validate={
+          Array [
+            [Function],
+          ]
+        }
+      />
+    </div>
+    <div
+      className="row"
+    >
+      <Field
+        className="textarea"
+        component="textarea"
+        name="[object Object].content"
+        placeholder="Section content here"
+      />
+    </div>
+    <div
+      className="deleteSectionButton"
+      onClick={[Function]}
+    >
+      <svg
+        className="icon"
+      >
+        <use
+          xlinkHref="#bin"
+        />
+      </svg>
+    </div>
+  </div>
+  <button
+    className="vanilla newSectionButton"
+    onClick={[Function]}
+    type="button"
+  >
+    + Add new section
+  </button>
+</div>
+`;

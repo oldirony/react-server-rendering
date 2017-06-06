@@ -95,7 +95,7 @@ class IdeaForm extends Component {
 }
 
 
-const SubFieldsHolder = ({fields=[]}) => {
+export const SubFieldsHolder = ({fields=[]}) => {
 	return (
 		<div className={field.subFields}>
 			{fields.map((section, index) => {
@@ -135,12 +135,13 @@ const SubFieldsHolder = ({fields=[]}) => {
 				)
 			})}
 
+
 			<button
 				type="button"
 				onClick={() => {
 					fields.push({});
 				}}
-				className={button.vanilla}
+				className={`${button.vanilla} newSectionButton`}
 			>+ Add new section</button>
 		</div>
 	)
