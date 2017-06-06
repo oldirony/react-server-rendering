@@ -23,12 +23,14 @@ const SingleIdea = ({title, timestamp, content, sections, id, updateIdeaSections
 			</time>
 
 
-			<div className={idea.content}>
-				{content.split('\n').map((subcontent, index)=> {
-					if(!subcontent) return;
-					return <p key={index}>{subcontent}</p>
-				})}
-			</div>
+			{content && (
+				<div className={idea.content}>
+					{content.trim().split('\n').map((subcontent, index)=> {
+						if(!subcontent) return;
+						return <p key={index}>{subcontent}</p>
+					})}
+				</div>
+			)}
 
 			<ul className={idea.sections}>
 				{sections && sections.map((section,index) => (
@@ -53,9 +55,9 @@ const SingleIdea = ({title, timestamp, content, sections, id, updateIdeaSections
 };
 
 SingleIdea.propTypes = {
-	title: PropTypes.string,
+	title: PropTypes.string.isRequired,
 	content: PropTypes.string,
-	sections: PropTypes.array,
+	sections: PropTypes.array.isRequired,
 };
 
 export default SingleIdea;

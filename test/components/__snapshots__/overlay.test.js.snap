@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly 1`] = `
+<div
+  className="overlay"
+>
+  <div
+    className="inner"
+  >
+    <Link
+      className="close"
+      replace={false}
+      to="/ideas"
+    >
+      <svg
+        className="icon"
+      >
+        <use
+          xlinkHref="#cross"
+        />
+      </svg>
+    </Link>
+    <Comp />
+  </div>
+</div>
+`;
