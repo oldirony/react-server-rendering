@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base rendering 1`] = `
+<div
+  className="field-wrapper"
+>
+  <input
+    className=""
+    placeholder="placeholder"
+  />
+</div>
+`;
+
+exports[`Base rendering 2`] = `
+<div
+  className="field-wrapper"
+>
+  <input
+    className="isInvalid"
+    placeholder="placeholder"
+  />
+  <div
+    className="errorMessage"
+  >
+    Big error
+  </div>
+</div>
+`;

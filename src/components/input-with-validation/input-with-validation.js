@@ -22,6 +22,13 @@ const InputWithValidation = ({meta: {touched, error}, input, className, ...etc})
 	)
 };
 
-InputWithValidation.propTypes = {};
+InputWithValidation.propTypes = {
+	className: PropTypes.string,
+	meta: PropTypes.shape({
+		touched: PropTypes.bool.isRequired,
+		error: PropTypes.string
+	}),
+	placeholder: PropTypes.string
+};
 
 export default InputWithValidation;
