@@ -9,7 +9,9 @@
     "start:prod": "npm run build && node server.bundle.js",
     "build:client": "webpack -p",
     "build:server": "webpack --config webpack.server.config.js",
-    "build": "npm run build:client && npm run build:server"
+    "build": "npm run build:client && npm run build:server",
+    "test": "node node_modules/.bin/jest",
+    "test:watch": "node node_modules/.bin/jest --watch"
   },
   "author": "",
   "license": "ISC",
