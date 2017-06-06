@@ -30,11 +30,11 @@ const IdeaSection = ({title, content, index, isCompleted, updateSection})=>{
 
 
 IdeaSection.propTypes = {
-	title : PropTypes.string,
+	title : PropTypes.string.isRequired,
 	content: PropTypes.string,
-	index: PropTypes.number,
-	isCompleted: PropTypes.bool,
-	updateIdeaSections: PropTypes.func
+	index: PropTypes.number.isRequired,
+	isCompleted: PropTypes.bool.isRequired,
+	updateSection: PropTypes.func.isRequired
 };
 
 export default IdeaSection;

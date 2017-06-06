@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly 1`] = `
+<li
+  className="item"
+>
+  <Link
+    className="link"
+    replace={false}
+    to="/ideas/:id"
+  >
+    <h2
+      className="title"
+    >
+      Idea title
+    </h2>
+    <time
+      className="date"
+    >
+      12:56 
+      31-4-2017
+    </time>
+    <div
+      className="completedSections"
+    >
+      0
+       / 
+      0
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#checkbox-unchecked"
+          />
+        </svg>
+        completed
+      </button>
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#bin"
+          />
+        </svg>
+      </button>
+    </div>
+  </Link>
+</li>
+`;
+
+exports[`Structure Get completed class 1`] = `
+<li
+  className="item isCompleted"
+>
+  <Link
+    className="link"
+    replace={false}
+    to="/ideas/:id"
+  >
+    <h2
+      className="title"
+    >
+      Idea title
+    </h2>
+    <time
+      className="date"
+    >
+      12:56 
+      31-4-2017
+    </time>
+    <div
+      className="completedSections"
+    >
+      0
+       / 
+      0
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#checkbox-checked"
+          />
+        </svg>
+        completed
+      </button>
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#bin"
+          />
+        </svg>
+      </button>
+    </div>
+  </Link>
+</li>
+`;
+
+exports[`Structure Renders section number 1`] = `
+<li
+  className="item"
+>
+  <Link
+    className="link"
+    replace={false}
+    to="/ideas/:id"
+  >
+    <h2
+      className="title"
+    >
+      Idea title
+    </h2>
+    <time
+      className="date"
+    >
+      12:56 
+      31-4-2017
+    </time>
+    <div
+      className="completedSections"
+    >
+      0
+       / 
+      2
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#checkbox-unchecked"
+          />
+        </svg>
+        completed
+      </button>
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#bin"
+          />
+        </svg>
+      </button>
+    </div>
+  </Link>
+</li>
+`;
+
+exports[`Structure Renders section number 2`] = `
+<li
+  className="item"
+>
+  <Link
+    className="link"
+    replace={false}
+    to="/ideas/:id"
+  >
+    <h2
+      className="title"
+    >
+      Idea title
+    </h2>
+    <time
+      className="date"
+    >
+      12:56 
+      31-4-2017
+    </time>
+    <div
+      className="completedSections"
+    >
+      1
+       / 
+      2
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#checkbox-unchecked"
+          />
+        </svg>
+        completed
+      </button>
+      <button
+        className="vanilla withIcon"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="#bin"
+          />
+        </svg>
+      </button>
+    </div>
+  </Link>
+</li>
+`;

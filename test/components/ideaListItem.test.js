@@ -48,7 +48,7 @@ describe('Structure', ()=>{
 describe('Behaviour', ()=>{
 	const renderItem = (customProps={})=>mount(wrapper(<IdeaListItem {...props} {...customProps}/>));
 
-	test('Test update button', ()=>{
+	test('Update button click', ()=>{
 		const handleUpdateClick = jest.fn();
 		const ideaListItem = renderItem({handleUpdateClick});
 		ideaListItem.find(`.${classes.buttons}`).find('button').first().simulate('click');
@@ -56,7 +56,7 @@ describe('Behaviour', ()=>{
 		expect(handleUpdateClick).toBeCalled();
 	});
 
-	test('Test delete button', ()=>{
+	test('Delete button click', ()=>{
 		const handleDeleteClick = jest.fn();
 		const ideaListItem = renderItem({handleDeleteClick});
 		ideaListItem.find(`.${classes.buttons}`).find('button').last().simulate('click');
