@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly with ideas 1`] = `
+<ul
+  className="list"
+>
+  <IdeaListItem
+    id="1"
+    isCompleted={false}
+    timestamp="2017-06-06T12:35:47+00:00"
+    title="title"
+  />
+  <IdeaListItem
+    id="2"
+    isCompleted={false}
+    timestamp="2017-06-06T12:35:47+00:00"
+    title="title"
+  />
+</ul>
+`;
+
+exports[`It renders correctly with ideas with hidden completed ideas 1`] = `
+<ul
+  className="list"
+>
+  <IdeaListItem
+    id="1"
+    isCompleted={false}
+    timestamp="2017-06-06T12:35:47+00:00"
+    title="title"
+  />
+  <IdeaListItem
+    id="2"
+    isCompleted={false}
+    timestamp="2017-06-06T12:35:47+00:00"
+    title="title"
+  />
+</ul>
+`;
+
+exports[`It renders correctly without ideas 1`] = `
+<div
+  className="info centralColumn"
+>
+  <div
+    className="content"
+  >
+    Waiting for you first idea!
+  </div>
+  <Link
+    className="button"
+    replace={false}
+    to="/ideas/new"
+  >
+    Add new
+  </Link>
+</div>
+`;
+
+exports[`It renders correctly without ideas with hidden completed ideas 1`] = `
+<div
+  className="info centralColumn"
+>
+  <div
+    className="content"
+  >
+    Well done, no uncompleted ideas!
+  </div>
+  <Link
+    className="button"
+    replace={false}
+    to="/ideas/new"
+  >
+    Add new
+  </Link>
+</div>
+`;
