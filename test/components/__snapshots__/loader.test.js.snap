@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correcly 1`] = `
+<div
+  className="loader"
+>
+  <div
+    className="text"
+  />
+</div>
+`;
+
+exports[`It renders correcly 2`] = `
+<div
+  className="loader isVisible"
+>
+  <div
+    className="text"
+  >
+    Doing things
+  </div>
+</div>
+`;

@@ -16,7 +16,7 @@ const Loader = ({isVisible, message})=>{
 };
 
 Loader.propTypes = {
-	isVisible: PropTypes.bool,
+	isVisible: PropTypes.bool.isRequired,
 	message: PropTypes.string,
 };
 
