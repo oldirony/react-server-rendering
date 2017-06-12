@@ -7,6 +7,7 @@ import ideaListItem from './idea-list-item.scss';
 import button from '../../styles/_button.scss';
 import icon from '../../styles/_icon.scss';
 import {getFormattedDate} from '../../lib/utils';
+import draggable from '../draggable/draggable';
 
 const IdeaListItem = ({isCompleted, title, id, timestamp, handleUpdateClick, handleDeleteClick, coverImage, sections})=>{
 	let classes =  cl({
@@ -81,4 +82,4 @@ IdeaListItem.propTypes = {
 	}).isRequired)
 };
 
-export default IdeaListItem;
+export default draggable(IdeaListItem);

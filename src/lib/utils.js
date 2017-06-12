@@ -9,3 +9,15 @@ export const getFormattedDate = (date)=> {
 	return `${formatDigits(date.getDate())}/${formatDigits(date.getMonth())}/${date.getFullYear()}` +
 			` ${formatDigits(date.getHours())}:${formatDigits(date.getMinutes())}`;
 }
+
+
+export const getSiblingIndex=(elem)=>{
+	let index = 0;
+	let prevElement = elem.previousSibling;
+	while (prevElement){
+		prevElement = prevElement.previousSibling;
+		index++;
+	}
+
+	return index;
+}
